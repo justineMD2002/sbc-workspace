@@ -11,10 +11,10 @@ async function main() {
     const instruction = Web3.SystemProgram.transfer({
         fromPubkey: publicKeyFrom,
         toPubkey: publicKeyTo,
-        lamports: 1000000000,
+        lamports: 1,
     });
     const transaction = new Web3.Transaction();
-    transaction.add(instruction);
+    transaction.add(instruction);5
 
     const connection = new Web3.Connection(Web3.clusterApiUrl('devnet'))
     const txSignature = await Web3.sendAndConfirmTransaction(connection, transaction, [keyPair]);

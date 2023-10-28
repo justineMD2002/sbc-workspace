@@ -169,3 +169,7 @@ compile_commands.json
 
 bun.lockb
 pnpm-lock.yaml
+
+# Added by cargo
+
+/target
